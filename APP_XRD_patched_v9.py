@@ -68,7 +68,7 @@ ITO_WINDOWS = [(20.5, 21.5), (29.0, 31.0), (34.0, 36.0), (50.0, 51.5), (59.5, 61
 # Liste de phases proposées dans le menu déroulant (tu peux compléter)
 PHASE_CHOICES = [
     "α-FAPI", "δ-FAPI", "PbI₂", "FAI",
-    "PbI₂·DMSO", "PbI₂·DMF", "PbI₂·2DMSO",
+    "PbI₂·DMSO", "PbI₂·DMF", "PbI₂·2DMSO","4H", "6H",
     "ITO", "Autre/Unknown"
 ]
 
@@ -80,6 +80,8 @@ PHASE_COLOR_MAP = {
     "PbI₂·DMSO": "#8c564b",
     "PbI₂·DMF":  "#e377c2",
     "PbI₂·2DMSO":"#7f7f7f",
+    "4H": "#bcbd22",
+    "6H": "#d62728",
     "ITO":    "#17becf",
     "Autre/Unknown": "#444444",
 }
@@ -105,6 +107,8 @@ PHASE_REF_FILES = [
     ("PbI2_DMF.txt",               "PbI₂·DMF"),
     ("PbI2·2DMSO.txt",             "PbI₂·2DMSO"),
     ("PbI2_2DMSO.txt",             "PbI₂·2DMSO"),  # fallback (certains OS n'aiment pas '·')
+    ("4H.txt",                     "4H"),
+    ("6H.txt",                     "6H"),
     ("ITO.txt",                    "ITO"),
 ]
 
